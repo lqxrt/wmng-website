@@ -157,8 +157,8 @@ body {
     height: 500px;
 }
 
-
 /*Footer Styles*/
+<<<<<<< HEAD
 a {
     color: #fff;
     text-decoration: none;
@@ -168,6 +168,8 @@ footer {
     bottom: 0px;
 }
 
+=======
+>>>>>>> e18175fce553396c13271dae1f24d4e0b9a160fe
 footer div {
     background-color: #4478e3;
     margin: -5px 0px 0px 0px;
@@ -177,51 +179,18 @@ footer div {
 }
 
 svg {
-    width:100%;
-    overflow:visible;
+    width: 100%;
+    overflow: visible;
+}
+
+.gooeff {
+    filter: url(#goo);
 }
 
 .wave {
-    animation: wave 3s linear;
+    animation: wave 4s linear;
     animation-iteration-count:infinite;
     fill: #4478e3;
-}
-
-.drop {
-    fill: #4478e3;
-    xfill: #99000055;
-    animation: drop 3.2s linear infinite normal;
-    stroke: var(--col-deepblue);
-    stroke-width:0.5;
-    transform: translateY(25px) ;
-    transform-box: fill-box;
-    transform-origin: 50% 100%;
-}
-
-.drop1 {}
-
-.drop2 {
-    animation-delay: 3s;
-    animation-duration:3s;
-}
-
-.drop3 {
-    animation-delay: -2s;
-    animation-duration:3.4s;
-}
-
-.drop4 {
-  animation-delay: 1.7s;
-}
-
-.drop5 {
-  animation-delay: 2.7s;
-  animation-duration:3.1s;
-}
-
-.drop6 {
-  animation-delay: -2.1s;
-  animation-duration:3.2s;
 }
 
 #wave2 {
@@ -233,24 +202,6 @@ svg {
 #wave3 {
     animation-duration: 7s;
     opacity: .3;
-}
-
-@keyframes drop {
-    0% {
-        transform: translateY(25px);
-    }
-    30% {
-        transform: translateY(-10px) scale(.1);
-    }
-    30.001% {
-        transform: translateY(25px) scale(1);
-    }
-    70% {
-        transform: translateY(25px);
-    }
-    100% {
-        transform: translateY(-10px) scale(.1);
-    }
 }
 
 @keyframes wave {
