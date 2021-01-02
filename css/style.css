@@ -46,7 +46,7 @@ body {
     height: 90vh;
     background-image:
         linear-gradient(to right, rgba(76, 161, 175, 0.8), rgba(196, 224, 229, 0.8)),
-        url("../img/hero.jpg");
+        url("../img/Front-page2.png");
     background-size: cover;
     background-position: top;
     position: relative;
