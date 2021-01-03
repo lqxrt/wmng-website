@@ -1,81 +1,83 @@
-html {
-    font-size: 16px;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-@media screen and (min-width: 320px) {
-    .heading-primary-main {
-        font-size: 1.6em;
-        letter-spacing: 2px;
-        line-height: 1;
-    }
-    .heading-primary-sub {
-        font-size: 0.8em;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .heading-primary-main {
-        font-size: 2em;
-        letter-spacing: 2px;
-        line-height: 1;
-    }
-    .heading-primary-sub {
-        font-size: 0.8em;
-        font-weight: 700;
-        letter-spacing: 0.1em;
-    }
-}
-
-*, *:after, *:before {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
 }
 
-body {
-    font-family: sans-serif;
-    line-height: 1.7;
-    color: white;
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
 }
 
-.header {
-    height: 90vh;
-    background-image:
-        linear-gradient(to right, rgba(76, 161, 175, 0.8), rgba(196, 224, 229, 0.8)),
-        url("../img/Front-page2.png");
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    text-transform: uppercase;
+.navbar{
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
 
-.text-box {
+.logo{
+    width: 40px;
+    cursor: pointer;
+}
+
+nav{
+    font-family: Montserrat;
+    padding-left: 30px;
+    padding-right:20px;
+}
+
+nav ul li {
+    float:left;
+    list-style: none;
+    margin: 0px 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.content{
+    color:black;    
+    margin-left: 10%;
+    margin-top:18%;
+}
+
+.content h1{
+    font-family: Montserrat;
+    font-size: 55;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.content p{
+    font-family: Montserrat;
+    font-size: 27.5;
+    font-weight:300;
+}
+
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(60deg,#5BECFA,#FFDDD2)
+    
+}
+
+.Landing-image{
+    height:70%;
+    position:absolute;
+    bottom:110px;
+    right:150px;
+}
+
+.Arrow-home{
+    height:5%;
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
+    bottom:15px;
+    right:750px;
 
-.heading-primary {
-    color: #fff;
-
-    backface-visibility: hidden;
-    margin-bottom: 1.2em;
-}
-
-.heading-primary-main {
-    display: block;
-    animation: moveInLeft 1.2s ease-out;
-}
-
-.heading-primary-sub {
-    display: block;
-    animation: moveInRight 1.2s ease-out;
 }
 
 .btn:link, .btn:visited {
@@ -158,18 +160,6 @@ body {
 }
 
 /*Footer Styles*/
-<<<<<<< HEAD
-a {
-    color: #fff;
-    text-decoration: none;
-}
-
-footer {
-    bottom: 0px;
-}
-
-=======
->>>>>>> e18175fce553396c13271dae1f24d4e0b9a160fe
 footer div {
     background-color: #4478e3;
     margin: -5px 0px 0px 0px;
