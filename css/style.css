@@ -4,7 +4,7 @@
 }
 
 .container{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: white;
 }
@@ -40,7 +40,7 @@ nav ul li a{
 }
 
 .content{
-    color:black;    
+    color:black;
     margin-left: 10%;
     margin-top:18%;
 }
@@ -62,7 +62,7 @@ nav ul li a{
 .content .btn{
     display: inline-block;
     background: linear-gradient(60deg,#5BECFA,#FFDDD2)
-    
+
 }
 
 .Landing-image{
@@ -72,12 +72,68 @@ nav ul li a{
     right:150px;
 }
 
-.Arrow-home{
-    height:5%;
-    position: absolute;
-    bottom:15px;
-    right:750px;
+.scroll-arrow-container {
+    position: relative;
+    height: 20vh;
+}
 
+.scroll-arrow-container a {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #000;
+    transition: opacity .3s;
+}
+
+.scroll-arrow-container a:hover {
+    opacity: .5;
+}
+
+.scroll-arrow-container a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: arrow-anim 1.5s infinite;
+    animation: arrow-anim 1.5s infinite;
+}
+
+@-webkit-keyframes arrow-anim {
+  0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes arrow-anim {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
 }
 
 .btn:link, .btn:visited {
