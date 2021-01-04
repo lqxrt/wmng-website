@@ -74,6 +74,7 @@ nav ul li a{
 
 .scroll-arrow-container {
     position: relative;
+    height: 20vh;
 }
 
 .scroll-arrow-container a {
