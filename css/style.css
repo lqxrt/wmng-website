@@ -19,30 +19,36 @@
 
 .logo{
     width: 40px;
+    position: relative;
+    left:5%;              
     cursor: pointer;
 }
 
 nav{
     font-family: Montserrat;
-    padding-left: 30px;
-    padding-right:20px;
+    padding-left: 20px;
+    padding-right:10px;
 }
 
 nav ul li {
     float:left;
     list-style: none;
-    margin: 0px 50px;
+    margin: 30px 70px;
+    
 }
 
 nav ul li a{
     text-decoration: none;
     color: black;
+    align-self: flex-end;
 }
 
 .content{
+    display:flex;
+    display:inline-block;
     color:black;
-    margin-left: 10%;
-    margin-top:18%;
+    margin-left: 5%;
+    margin-top:12%;
 }
 
 .content h1{
@@ -50,13 +56,19 @@ nav ul li a{
     font-size: 55;
     font-weight: bold;
     margin-top: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+h1{
+    font-size: 62px;
 }
 
 .content p{
+    color:#413D3D;
     font-family: Montserrat;
-    font-size: 27.5;
+    font-size: 31px;
     font-weight:300;
+    margin-bottom: 30px;
 }
 
 .content .btn{
@@ -67,9 +79,10 @@ nav ul li a{
 
 .Landing-image{
     height:70%;
-    position:absolute;
-    bottom:110px;
-    right:150px;
+    width: auto;
+    position: absolute;
+    bottom: 12%;
+    right: 8%;
 }
 
 .scroll-arrow-container {
@@ -80,7 +93,7 @@ nav ul li a{
 .scroll-arrow-container a {
     position: absolute;
     left: 50%;
-    bottom: 10px;
+    bottom: 25%;
     z-index: 2;
     display: inline-block;
     -webkit-transform: translateY(-50%);
