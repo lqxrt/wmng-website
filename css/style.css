@@ -1,17 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-.content{
-    display:flex;
-    display:inline-block;
-    color:black;
+.content {
+    display: flex;
+    display: inline-block;
+    color: black;
     margin-left: 5%;
-    margin-top:12%;
+    margin-top: 12%;
 }
 
-.content h1{
+.content h1 {
     font-family: Montserrat;
     font-size: 55;
     font-weight: bold;
@@ -19,31 +19,30 @@
     margin-bottom: 50px;
 }
 
-h1{
+h1 {
     font-size: 62px;
 }
 
-.content p{
-    color:#413D3D;
+.content p {
+    color: #413D3D;
     font-family: Montserrat;
     font-size: 31px;
-    font-weight:300;
+    font-weight: 300;
     margin-bottom: 30px;
 }
 
-.content .btn{
+.content .btn {
     display: inline-block;
-    background: linear-gradient(60deg,#5BECFA,#FFDDD2)
-
+    background: linear-gradient(60deg, #5BECFA, #FFDDD2)
 }
 
-.Landing-image{
-    height:70%;
+.Landing-image {
+    height: 70%;
     width: auto;
     position: absolute;
     bottom: 12%;
     right: 8%;
-    z-index:0;
+    z-index: 0;
 }
 
 .scroll-arrow-container {
@@ -83,7 +82,7 @@ h1{
 }
 
 @-webkit-keyframes arrow-anim {
-  0% {
+    0% {
         -webkit-transform: rotate(-45deg) translate(0, 0);
         opacity: 0;
     }
@@ -110,7 +109,8 @@ h1{
     }
 }
 
-.btn:link, .btn:visited {
+.btn:link,
+.btn:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 15px 40px;
@@ -189,31 +189,33 @@ h1{
     height: 500px;
 }
 
-.landing-page{
-    padding:5px 0px 180px;
+.landing-page {
+    padding: 5px 0px 180px;
 }
 
-.card-group{
-    box-shadow: 0 70px 140px 0 rgba(130,136,171,.2);
+.card-group {
+    box-shadow: 0 70px 140px 0 rgba(130, 136, 171, .2);
 }
 
-.card-1{
-    padding:0px 70px;
+.card-1 {
+    padding: 0px 70px;
 }
 
-.card-2{
-    padding:0px 70px;
+.card-2 {
+    padding: 0px 70px;
 }
 
-.card-3{
-    padding:0px 70px;
+.card-3 {
+    padding: 0px 70px;
 }
 
-.navbar-brand{
-    padding:0px 65px;
+.navbar-brand {
+    padding: 0px 65px;
 }
+
 
 /*Footer Styles*/
+
 footer div {
     background-color: #4478e3;
     margin: -5px 0px 0px 0px;
@@ -233,7 +235,7 @@ svg {
 
 .wave {
     animation: wave 4s linear;
-    animation-iteration-count:infinite;
+    animation-iteration-count: infinite;
     fill: #4478e3;
 }
 
@@ -249,5 +251,7 @@ svg {
 }
 
 @keyframes wave {
-  to {transform: translateX(-100%);}
+    to {
+        transform: translateX(-100%);
+    }
 }
